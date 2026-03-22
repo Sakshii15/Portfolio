@@ -1,0 +1,28 @@
+.footer {
+  text-align: center;
+  bottom: 0;
+  padding: 2rem 0 2.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #999;
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  > a {
+    color: #cc84ff;
+    text-decoration: none;
+    font-weight: 800;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #edd5ff;
+    }
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .footer {
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+}

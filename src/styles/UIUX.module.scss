@@ -1,0 +1,138 @@
+@media screen and (min-width: 60em) {
+  .uiUx {
+    margin-top: 2rem;
+    padding: 4rem 10rem;
+    position: relative;
+
+    > h1 {
+      font-size: 3rem;
+      padding: 2rem 0;
+      font-weight: 800;
+      text-align: center;
+      color: transparent;
+      background: linear-gradient(to right, #cf92fb, #ffffff, #cf92fb);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200%;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .uiUxContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .uxCardContainer {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.4rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.4s ease;
+    cursor: default;
+
+    &:hover {
+      transform: translateY(-8px);
+      border-color: rgba(149, 0, 255, 0.3);
+      box-shadow: 0 20px 60px rgba(149, 0, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .uxCardImage {
+      overflow: hidden;
+      border-radius: 10px;
+
+      > img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 10px;
+        height: auto !important;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover > img {
+        transform: scale(1.03);
+      }
+    }
+
+    .uxCardInfo {
+      padding-top: 1.2rem;
+
+      h1 {
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 0.95rem;
+        font-weight: 400;
+        color: #999;
+        padding-top: 0.5rem;
+        line-height: 1.7;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .uiUx {
+    padding: 3rem 0;
+
+    > h1 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+      color: transparent;
+      background: linear-gradient(to right, #cf92fb, #ffffff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  .uiUxContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .uxCardContainer {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    .uxCardImage {
+      overflow: hidden;
+      border-radius: 10px;
+
+      > img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 10px;
+        height: auto !important;
+      }
+    }
+
+    .uxCardInfo {
+      padding-top: 1rem;
+
+      h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 0.85rem;
+        font-weight: 400;
+        color: #999;
+        padding-top: 0.4rem;
+        line-height: 1.6;
+      }
+    }
+  }
+}

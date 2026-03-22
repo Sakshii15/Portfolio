@@ -1,0 +1,159 @@
+.blog {
+  padding: 0 10rem;
+  margin-top: 2rem;
+  padding-top: 4rem;
+
+  > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 2rem 0;
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(to right, #cf92fb, #ffffff, #cf92fb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    letter-spacing: 0.02em;
+  }
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2rem;
+}
+
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: rgba(149, 0, 255, 0.25);
+    box-shadow: 0 12px 40px rgba(149, 0, 255, 0.08);
+  }
+
+  .blogHeader {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    margin-bottom: 1.5rem;
+
+    > h3 {
+      font-size: 1.8rem;
+      font-weight: 800;
+    }
+    .role {
+      font-size: 1.1rem;
+      color: #cf92fb;
+      font-weight: 600;
+      padding-top: 0.4rem;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: #777;
+      padding-top: 0.4rem;
+    }
+  }
+
+  .blogDescription {
+    > p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #b0b0b0;
+      padding-bottom: 1rem;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .blogBullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      position: relative;
+      padding-left: 1.4rem;
+      padding-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #b0b0b0;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      &::before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: #cf92fb;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .blog {
+    padding: 3rem 0;
+    margin-top: 0;
+
+    > h1 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+      color: transparent;
+      background: linear-gradient(to right, #cf92fb, #ffffff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  .blogContainer {
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    .blogHeader {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+
+      > h3 {
+        font-size: 1.3rem;
+      }
+      .role {
+        font-size: 0.95rem;
+      }
+      .meta {
+        font-size: 0.8rem;
+      }
+    }
+
+    .blogDescription {
+      > p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        color: #b0b0b0;
+        padding-bottom: 0.8rem;
+      }
+    }
+
+    .blogBullets {
+      > li {
+        font-size: 0.9rem;
+        line-height: 1.7;
+      }
+    }
+  }
+}
