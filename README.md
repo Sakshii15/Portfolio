@@ -1,17 +1,8 @@
-# MyPortfolio
- A Simple Portfolio made using Nextjs and TailwindCSS .
- 
-## Development
+# Hi, I'm Sakshi Sahu 👋
 
-`npm install` - Install required npm packages for development.
+Software Engineer at Delhivery Ltd., specializing in SDET and Backend Automation. I build Java-based automation frameworks for Transportation Management Systems, automate REST APIs and Kafka pipelines, and craft full-stack apps with React, Node.js, and Express.
 
-`npm run dev` - Required command for development.
-
-`npm run build` - Take a build for production step.
-
-`npm run preview` - Required to see the last status of your project.
-## Screenshots
-![First Page](firstp.png)
-![Second Page](secondp.png)
-![Third Page](thirdp.png)
-
+- 🔗 [Portfolio](https://portfolio159.netlify.app)
+- 💼 [LinkedIn](https://linkedin.com/in/sakshi-sahu)
+- 💻 [GitHub](https://github.com/Sakshii15)
+- 📧 sahu.sakshii015@gmail.com
